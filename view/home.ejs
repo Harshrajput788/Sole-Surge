@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include("./partial/head.ejs") %>
+    <%- include("./partial/homestyle.ejs") %>
+    <link rel="icon" type="png" href="/Tools/logo.png">
+    <title>Sole Surge</title>
+</head>
+
+<body>
+    <%- include("./partial/nav") %>
+        <div class="container my-10 lg:hidden flex justify-center ">
+            <img src="/Tools/item-1.png" alt="">
+            <img src="/Tools/item-2.png" alt="">
+            <img src="/Tools/item-3.png" alt="">
+            <img src="/Tools/item-4.png" alt="">
+        </div>
+        <div class="control lg:hidden flex">
+            <i class="fa-solid top-52 absolute left-1 fa-angle-left"></i>
+            <i class="fa-solid top-52 absolute right-1 fa-angle-right"></i>
+        </div>
+        <div class="content lg:hidden flex justify-center my-10">
+            <div class="title">
+                <div class="w-16 h-8 flex justify-center items-center font-semibold bg-yellow-300">New</div>
+                <h1 class="text-2xl my-3 font-semibold">Adidas</h1>
+                <p class="my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, aliquam at? Deserunt
+                    voluptate adipisci, voluptatum obcaecati dolore ipsa vero non minima incidunt similique inventore
+                    explicabo, aliquam voluptatibus veritatis, nobis minus.</p>
+                <button class="my-3 cursor-pointer w-24 h-10 bg-[#0067b8] font-semibold text-white">View More</button>
+            </div>
+            <div class="title">
+                <div class="w-16 h-8 flex justify-center items-center font-semibold bg-yellow-300">New</div>
+                <h1 class="text-2xl my-3 font-semibold">Nick</h1>
+                <p class="my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, aliquam at? Deserunt
+                    voluptate adipisci, voluptatum obcaecati dolore ipsa vero non minima incidunt similique inventore
+                    explicabo, aliquam voluptatibus veritatis, nobis minus.</p>
+                <button class="my-3 cursor-pointer w-24 h-10 bg-[#0067b8] font-semibold text-white">View More</button>
+            </div>
+            <div class="title">
+                <div class="w-16 h-8 flex justify-center items-center font-semibold bg-yellow-300">New</div>
+                <h1 class="text-2xl my-3 font-semibold">Bata</h1>
+                <p class="my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, aliquam at? Deserunt
+                    voluptate adipisci, voluptatum obcaecati dolore ipsa vero non minima incidunt similique inventore
+                    explicabo, aliquam voluptatibus veritatis, nobis minus.</p>
+                <button class="my-3 cursor-pointer w-24 h-10 bg-[#0067b8] font-semibold text-white">View More</button>
+            </div>
+            <div class="title">
+                <div class="w-16 h-8 flex justify-center items-center font-semibold bg-yellow-300">New</div>
+                <h1 class="text-2xl my-3 font-semibold">Campus</h1>
+                <p class="my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, aliquam at? Deserunt
+                    voluptate adipisci, voluptatum obcaecati dolore ipsa vero non minima incidunt similique inventore
+                    explicabo, aliquam voluptatibus veritatis, nobis minus.</p>
+                <button class="my-3 cursor-pointer w-24 h-10 bg-[#0067b8] font-semibold text-white">View More</button>
+            </div>
+        </div>
+        <div class="container-p hidden lg:flex my-10">
+            <div class="left justify-center items-center">
+                <div id="title1" class="title1 flex none flex-col justify-center items-center">
+                    <div class="w-16 h-8 flex justify-center items-center font-semibold bg-yellow-300">New</div>
+                    <h1 class="text-5xl my-3 font-semibold">Adidas</h1>
+                    <button class="my-3 cursor-pointer w-28 h-10 bg-[#0067b8] font-semibold text-white">View
+                        More</button>
+                </div>
+                <div id="title2" class="title1 none flex-col justify-center items-center">
+                    <div class="w-16 h-8 flex justify-center items-center font-semibold bg-yellow-300">New</div>
+                    <h1 class="text-5xl my-3 font-semibold">Nick</h1>
+                    <button class="my-3 cursor-pointer w-28 h-10 bg-[#0067b8] font-semibold text-white">View
+                        More</button>
+                </div>
+                <div id="title3" class="title1 none flex-col justify-center items-center">
+                    <div class="w-16 h-8 flex justify-center items-center font-semibold bg-yellow-300">New</div>
+                    <h1 class="text-5xl my-3 font-semibold">Bata</h1>
+                    <button class="my-3 cursor-pointer w-28 h-10 bg-[#0067b8] font-semibold text-white">View
+                        More</button>
+                </div>
+                <div id="title4" class="title1 none flex-col justify-center items-center">
+                    <div class="w-16 h-8 flex justify-center items-center font-semibold bg-yellow-300">New</div>
+                    <h1 class="text-5xl my-3 font-semibold">Campus</h1>
+                    <button class="my-3 cursor-pointer w-28 h-10 bg-[#0067b8] font-semibold text-white">View
+                        More</button>
+                </div>
+            </div>
+
+            <div class="center1 flex justify-center items-center">
+                <img src="/Tools/item-1.png" id="item-1" class="mt-28 " alt="">
+                <img src="/Tools/item-2.png" id="item-2" class="mt-28 none" alt="">
+                <img src="/Tools/item-3.png" id="item-3" class="mt-28 none" alt="">
+                <img src="/Tools/item-4.png" id="item-4" class="mt-28 none" alt="">
+            </div>
+            <div class="right flex flex-col justify-center items-center">
+                <p id="inf-1" class="my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, aliquam at?
+                    Deserunt voluptate adipisci, voluptatum obcaecati dolore ipsa vero.</p>
+                <p id="inf-2" class="my-3 none">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
+                    officiis rerum voluptas quis temporibus voluptatibus animi quod blanditiis, illo aut.</p>
+                <p id="inf-3" class="my-3 none">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio, ad?
+                    Veritatis, atque iure quos odio quasi inventore accusamus aliquid voluptate.</p>
+                <p id="inf-4" class="my-3 none">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores at
+                    eius ad saepe sint delectus iure nesciunt? Quia, veritatis at?</p>
+            </div>
+        </div>
+        <div class="option hidden lg:flex mt-24 my-10 justify-center">
+            <div><img src="/Tools/item-1.png" id="op1" class="img cursor-pointer mx-4 h-10 w-10" alt=""></div>
+            <div><img src="/Tools/item-2.png" id="op2" class="cursor-pointer mx-4 h-10 w-10" alt=""></div>
+            <div><img src="/Tools/item-3.png" id="op3" class="cursor-pointer mx-4 h-10 w-10" alt=""></div>
+            <div><img src="/Tools/item-4.png" id="op4" class="cursor-pointer mx-4 h-10 w-10" alt=""></div>
+        </div>
+        <div class="container2 mt-32 flex-wrap items-center flex justify-center lg:bg-[#242d2e]">
+            <div class="items w-11/12 md:w-2/5 mx-4 lg:w-1/5 bg-white my-5">
+                <div class="up flex w-full justify-center"><img src="/Tools/item-5.png" alt=""></div>
+                <div class="bottom">
+                    <h1 class="text-2xl font-semibold my-3 mx-2 ">$29.45</h1>
+                    <h1 class="text-2xl font-semibold my-3 mx-2">Adidas Snickers</h1>
+                    <div
+                        class="w-16 items-center justify-center flex text-lg text-white h-7 bg-pink-500 mt-2 mx-2 font-semibold">
+                        New</div>
+                    <p class="text-sm my-3 mx-2">Lorem, ipsum dolor.</p>
+                    <button class="text-lg font-semibold text-white w-24 h-10 bg-[#0067b8] my-3 mx-2">Buy Now</button>
+                </div>
+            </div>
+            <div class="items w-11/12 md:w-2/5 mx-4 lg:w-1/5 bg-white my-5">
+                <div class="up flex w-full justify-center"><img src="/Tools/item-6.png" alt=""></div>
+                <div class="bottom">
+                    <h1 class="text-2xl font-semibold my-3 mx-2 ">$18.87</h1>
+                    <h1 class="text-2xl font-semibold my-3 mx-2">Nick Snickers</h1>
+                    <div
+                        class="w-16 items-center justify-center flex text-lg text-white h-7 bg-pink-500 mt-2 mx-2 font-semibold">
+                        New</div>
+                    <p class="text-sm my-3 mx-2">Lorem, ipsum dolor.</p>
+                    <button class="text-lg font-semibold text-white w-24 h-10 bg-[#0067b8] my-3 mx-2">Buy Now</button>
+                </div>
+            </div>
+            <div class="items w-11/12 md:w-2/5 mx-4 lg:w-1/5 bg-white my-5">
+                <div class="up flex w-full justify-center"><img src="/Tools/item-7.jpg" alt=""></div>
+                <div class="bottom">
+                    <h1 class="text-2xl font-semibold my-3 mx-2 ">$19.99</h1>
+                    <h1 class="text-2xl font-semibold my-3 mx-2">Campus Snickers</h1>
+                    <div
+                        class="w-16 items-center justify-center flex text-lg text-white h-7 bg-pink-500 mt-2 mx-2 font-semibold">
+                        New</div>
+                    <p class="text-sm my-3 mx-2">Lorem, ipsum dolor.</p>
+                    <button class="text-lg font-semibold text-white w-24 h-10 bg-[#0067b8] my-3 mx-2">Buy Now</button>
+                </div>
+            </div>
+            <div class="items w-11/12 md:w-2/5 mx-4 lg:w-1/5 bg-white my-5">
+                <div class="up flex w-full justify-center"><img src="/Tools/item-8.jpg" alt=""></div>
+                <div class="bottom">
+                    <h1 class="text-2xl font-semibold my-3 mx-2 ">$34.6</h1>
+                    <h1 class="text-2xl font-semibold my-3 mx-2">Adidas Snickers</h1>
+                    <div
+                        class="w-16 items-center justify-center flex text-lg text-white h-7 bg-pink-500 mt-2 mx-2 font-semibold">
+                        New</div>
+                    <p class="text-sm my-3 mx-2">Lorem, ipsum dolor.</p>
+                    <button class="text-lg font-semibold text-white w-24 h-10 bg-[#0067b8] my-3 mx-2">Buy Now</button>
+                </div>
+            </div>
+            <div class="items w-11/12 md:w-2/5 mx-4 lg:w-1/5 bg-white my-5">
+                <div class="up flex w-full justify-center"><img src="/Tools/item-9.jpg" alt=""></div>
+                <div class="bottom">
+                    <h1 class="text-2xl font-semibold my-3 mx-2 ">$34.45</h1>
+                    <h1 class="text-2xl font-semibold my-3 mx-2">Adidas Snickers</h1>
+                    <div
+                        class="w-16 items-center justify-center flex text-lg text-white h-7 bg-pink-500 mt-2 mx-2 font-semibold">
+                        New</div>
+                    <p class="text-sm my-3 mx-2">Lorem, ipsum dolor.</p>
+                    <button class="text-lg font-semibold text-white w-24 h-10 bg-[#0067b8] my-3 mx-2">Buy Now</button>
+                </div>
+            </div>
+            <div class="items w-11/12 md:w-2/5 mx-4 lg:w-1/5 bg-white my-5">
+                <div class="up flex w-full justify-center"><img src="/Tools/item-10.jpg" alt=""></div>
+                <div class="bottom">
+                    <h1 class="text-2xl font-semibold my-3 mx-2 ">$23.7</h1>
+                    <h1 class="text-2xl font-semibold my-3 mx-2">Nick Snickers</h1>
+                    <div
+                        class="w-16 items-center justify-center flex text-lg text-white h-7 bg-pink-500 mt-2 mx-2 font-semibold">
+                        New</div>
+                    <p class="text-sm my-3 mx-2">Lorem, ipsum dolor.</p>
+                    <button class="text-lg font-semibold text-white w-24 h-10 bg-[#0067b8] my-3 mx-2">Buy Now</button>
+                </div>
+            </div>
+            <div class="items w-11/12 md:w-2/5 mx-4 lg:w-1/5 bg-white my-5">
+                <div class="up flex w-full justify-center"><img src="/Tools/item-11.jpg" alt=""></div>
+                <div class="bottom">
+                    <h1 class="text-2xl font-semibold my-3 mx-2 ">$29.99</h1>
+                    <h1 class="text-2xl font-semibold my-3 mx-2">Campus Snickers</h1>
+                    <div
+                        class="w-16 items-center justify-center flex text-lg text-white h-7 bg-pink-500 mt-2 mx-2 font-semibold">
+                        New</div>
+                    <p class="text-sm my-3 mx-2">Lorem, ipsum dolor.</p>
+                    <button class="text-lg font-semibold text-white w-24 h-10 bg-[#0067b8] my-3 mx-2">Buy Now</button>
+                </div>
+            </div>
+            <div class="items w-11/12 md:w-2/5 mx-4 lg:w-1/5 bg-white my-5">
+                <div class="up flex w-full justify-center"><img src="/Tools/item-12.jpg" alt=""></div>
+                <div class="bottom">
+                    <h1 class="text-2xl font-semibold my-3 mx-2 ">$6.96</h1>
+                    <h1 class="text-2xl font-semibold my-3 mx-2">Adidas Snickers</h1>
+                    <div
+                        class="w-16 items-center justify-center flex text-lg text-white h-7 bg-pink-500 mt-2 mx-2 font-semibold">
+                        New</div>
+                    <p class="text-sm my-3 mx-2">Lorem, ipsum dolor.</p>
+                    <button class="text-lg font-semibold text-white w-24 h-10 bg-[#0067b8] my-3 mx-2">Buy Now</button>
+                </div>
+            </div>
+            <div class="items w-11/12 md:w-2/5 mx-4 lg:w-1/5 bg-white my-5">
+                <div class="up flex w-full justify-center"><img src="/Tools/item-13.jpg" alt=""></div>
+                <div class="bottom">
+                    <h1 class="text-2xl font-semibold my-3 mx-2 ">$24.45</h1>
+                    <h1 class="text-2xl font-semibold my-3 mx-2">Adidas Snickers</h1>
+                    <div
+                        class="w-16 items-center justify-center flex text-lg text-white h-7 bg-pink-500 mt-2 mx-2 font-semibold">
+                        New</div>
+                    <p class="text-sm my-3 mx-2">Lorem, ipsum dolor.</p>
+                    <button class="text-lg font-semibold text-white w-24 h-10 bg-[#0067b8] my-3 mx-2">Buy Now</button>
+                </div>
+            </div>
+            <div class="items w-11/12 md:w-2/5 mx-4 lg:w-1/5 bg-white my-5">
+                <div class="up flex w-full justify-center"><img src="/Tools/item-14.avif" alt=""></div>
+                <div class="bottom">
+                    <h1 class="text-2xl font-semibold my-3 mx-2 ">$12.47</h1>
+                    <h1 class="text-2xl font-semibold my-3 mx-2">Nick Snickers</h1>
+                    <div
+                        class="w-16 items-center justify-center flex text-lg text-white h-7 bg-pink-500 mt-2 mx-2 font-semibold">
+                        New</div>
+                    <p class="text-sm my-3 mx-2">Lorem, ipsum dolor.</p>
+                    <button class="text-lg font-semibold text-white w-24 h-10 bg-[#0067b8] my-3 mx-2">Buy Now</button>
+                </div>
+            </div>
+            <div class="items w-11/12 md:w-2/5 mx-4 lg:w-1/5 bg-white my-5">
+                <div class="up flex w-full justify-center"><img src="/Tools/item-15.jfif" alt=""></div>
+                <div class="bottom">
+                    <h1 class="text-2xl font-semibold my-3 mx-2 ">$34.99</h1>
+                    <h1 class="text-2xl font-semibold my-3 mx-2">Campus Snickers</h1>
+                    <div
+                        class="w-16 items-center justify-center flex text-lg text-white h-7 bg-pink-500 mt-2 mx-2 font-semibold">
+                        New</div>
+                    <p class="text-sm my-3 mx-2">Lorem, ipsum dolor.</p>
+                    <button class="text-lg font-semibold text-white w-24 h-10 bg-[#0067b8] my-3 mx-2">Buy Now</button>
+                </div>
+            </div>
+            <div class="items w-11/12 md:w-2/5 mx-4 lg:w-1/5 bg-white my-5">
+                <div class="up flex w-full justify-center"><img src="/Tools/item-16.jfif" alt=""></div>
+                <div class="bottom">
+                    <h1 class="text-2xl font-semibold my-3 mx-2 ">$7.86</h1>
+                    <h1 class="text-2xl font-semibold my-3 mx-2">Adidas Snickers</h1>
+                    <div
+                        class="w-16 items-center justify-center flex text-lg text-white h-7 bg-pink-500 mt-2 mx-2 font-semibold">
+                        New</div>
+                    <p class="text-sm my-3 mx-2">Lorem, ipsum dolor.</p>
+                    <button class="text-lg font-semibold text-white w-24 h-10 bg-[#0067b8] my-3 mx-2">Buy Now</button>
+                </div>
+            </div>
+            <div class="items w-11/12 md:w-2/5 mx-4 lg:w-1/5 bg-white my-5">
+                <div class="up flex w-full justify-center"><img src="/Tools/item-17.jpg" alt=""></div>
+                <div class="bottom">
+                    <h1 class="text-2xl font-semibold my-3 mx-2 ">$5.75</h1>
+                    <h1 class="text-2xl font-semibold my-3 mx-2">Adidas Snickers</h1>
+                    <div
+                        class="w-16 items-center justify-center flex text-lg text-white h-7 bg-pink-500 mt-2 mx-2 font-semibold">
+                        New</div>
+                    <p class="text-sm my-3 mx-2">Lorem, ipsum dolor.</p>
+                    <button class="text-lg font-semibold text-white w-24 h-10 bg-[#0067b8] my-3 mx-2">Buy Now</button>
+                </div>
+            </div>
+            <div class="items w-11/12 md:w-2/5 mx-4 lg:w-1/5 bg-white my-5">
+                <div class="up flex w-full justify-center"><img src="/Tools/item-18.avif" alt=""></div>
+                <div class="bottom">
+                    <h1 class="text-2xl font-semibold my-3 mx-2 ">$22.7</h1>
+                    <h1 class="text-2xl font-semibold my-3 mx-2">Nick Snickers</h1>
+                    <div
+                        class="w-16 items-center justify-center flex text-lg text-white h-7 bg-pink-500 mt-2 mx-2 font-semibold">
+                        New</div>
+                    <p class="text-sm my-3 mx-2">Lorem, ipsum dolor.</p>
+                    <button class="text-lg font-semibold text-white w-24 h-10 bg-[#0067b8] my-3 mx-2">Buy Now</button>
+                </div>
+            </div>
+            <div class="items w-11/12 md:w-2/5 mx-4 lg:w-1/5 bg-white my-5">
+                <div class="up flex w-full justify-center"><img src="/Tools/item-19.jpg" alt=""></div>
+                <div class="bottom">
+                    <h1 class="text-2xl font-semibold my-3 mx-2 ">$14.99</h1>
+                    <h1 class="text-2xl font-semibold my-3 mx-2">Campus Snickers</h1>
+                    <div
+                        class="w-16 items-center justify-center flex text-lg text-white h-7 bg-pink-500 mt-2 mx-2 font-semibold">
+                        New</div>
+                    <p class="text-sm my-3 mx-2">Lorem, ipsum dolor.</p>
+                    <button class="text-lg font-semibold text-white w-24 h-10 bg-[#0067b8] my-3 mx-2">Buy Now</button>
+                </div>
+            </div>
+            <div class="items w-11/12 md:w-2/5 mx-4 lg:w-1/5 bg-white my-5">
+                <div class="up flex w-full justify-center"><img src="/Tools/item-20.webp" alt=""></div>
+                <div class="bottom">
+                    <h1 class="text-2xl font-semibold my-3 mx-2 ">$18.86</h1>
+                    <h1 class="text-2xl font-semibold my-3 mx-2">Adidas Snickers</h1>
+                    <div
+                        class="w-16 items-center justify-center flex text-lg text-white h-7 bg-pink-500 mt-2 mx-2 font-semibold">
+                        New</div>
+                    <p class="text-sm my-3 mx-2">Lorem, ipsum dolor.</p>
+                    <button class="text-lg font-semibold text-white w-24 h-10 bg-[#0067b8] my-3 mx-2">Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <%- include("./partial/foot.ejs") %>
+        <%- include("./partial/homescript.ejs") %>
+</body>
+
+</html>

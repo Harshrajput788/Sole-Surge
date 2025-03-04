@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include("./partial/head.ejs") %>
+        <title>signin</title>
+        <style>
+            body {
+                width: 100%;
+                height: 100vh;
+            }
+
+            .signup{
+                border: 1px solid black;
+                border-radius: 5px;
+            }
+
+            .input:focus {
+                outline: none;
+            }
+
+            .input {
+                border-top: none;
+                border-left: none;
+                border-right: none;
+                border-bottom: 1px solid black;
+            }
+
+            .left img{
+                width: 100%;
+                height: 600px;
+            }
+
+            #input{
+                border: 1px solid black;
+                border-radius: 3px;
+                margin: 5px;
+            }
+
+            .right{
+                border-top: 1px solid black;
+                border-right: 1px solid black;
+                border-bottom: 1px solid black;
+                height: 600px;
+            }
+
+        </style>
+</head>
+
+<body class="justify-center items-center flex flex-col">
+    <div class="logo top-5 absolute flex">
+        <h1 class="text-2xl font-semibold">Sole</h1>
+        <img src="/Tools/logo.png" class="w-10 h-10" alt="">
+        <h1 class="text-2xl font-semibold">Surge</h1>
+    </div>
+
+    <div class="w-11/12 sm:w-1/2 lg:hidden md:w-1/2 signup p-5 flex flex-col items-center justify-center">
+        <h1 class="uppercase text-3xl font-semibold">Sign In</h1>
+        <form class="w-11/12" action="/signin" method="post">
+            <% if (locals.error) { %>
+                <div class="p-2 text-red-700 my-2 text-sm bg-red-200">Incorrect Email or password</div>
+            <% } %>
+            <label>Email:-</label>
+            <input type="email" name="email" class="input h-10 my-3 w-11/12">
+            <label>Password:-</label>
+            <input type="password" name="password" class="h-10 w-11/12 my-3 input">
+            <button type="submit" class="uppercase h-10 bg-black text-white cursor-pointer my-3 font-semibold w-11/12">Sign In</button>
+        </form>
+    </div>
+
+    <div class="hidden w-9/12 lg:flex justify-center items-center">
+        <div class="left w-1/2 flex justify-center items-center"><img src="/Tools/banner-signup.jpg" alt=""></div>
+        <div class="flex right justify-center items-center flex-col w-1/2 p-5">
+        <h1 class="uppercase text-3xl my-3 font-semibold">Sign In</h1>
+            <form class="w-11/12" action="/signin" method="post">
+                <% if (locals.error) { %>
+                    <div class="p-2 text-red-700 my-2 text-sm bg-red-200">Incorrect Email or password</div>
+                <% } %>
+                <label>Email:-</label>
+                <input type="email" name="email" class="input h-10 my-3 w-11/12">
+                <label>Password:-</label>
+                <input type="password" name="password" class="h-10 w-11/12 my-3 input">
+                <button type="submit" class="uppercase h-10 bg-black text-white cursor-pointer my-3 font-semibold w-11/12">Sign In</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="bottom flex justify-center items-center bottom-5 absolute">
+        <label>Lang:-</label>
+        <select id="input">
+            <option value="English">English</option>
+        </select>
+        <label>Coun:-</label>
+        <select id="input">
+            <option value="India">India</option>
+        </select>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,151 @@
+<script>
+            const pre = document.querySelector(".fa-angle-left");
+            const next = document.querySelector(".fa-angle-right");
+            const imgs = document.querySelectorAll(".container img");
+            const items = document.querySelectorAll(".content .title");
+            let n = 0;
+
+            function changeSlider() {
+                for (let i = 0; i < imgs.length; i++) {
+                    imgs[i].style.display = "none";
+                }
+
+                imgs[n].style.display = "flex";
+            }
+            function changeSlider1() {
+                for (let j = 0; j < items.length; j++) {
+                    items[j].style.display = "none";
+                }
+                items[n].style.display = "block";
+            }
+            changeSlider();
+            changeSlider1();
+
+            pre.addEventListener("click", () => {
+                if (n > 0) {
+                    n--;
+                } else {
+                    n = imgs.length - 1;
+                }
+                changeSlider();
+                changeSlider1();
+            })
+            next.addEventListener("click", (e) => {
+                if (n < imgs.length - 1) {
+                    n++;
+                } else {
+                    n = 0;
+                }
+                changeSlider();
+                changeSlider1();
+            })
+        </script>
+        <script>
+            const op1 = document.getElementById("op1");
+            const op2 = document.getElementById("op2");
+            const op3 = document.getElementById("op3");
+            const op4 = document.getElementById("op4");
+
+            const inf1 = document.getElementById("inf-1");
+            const inf2 = document.getElementById("inf-2");
+            const inf3 = document.getElementById("inf-3");
+            const inf4 = document.getElementById("inf-4");
+
+            const title1 = document.getElementById("title1");
+            const title2 = document.getElementById("title2");
+            const title3 = document.getElementById("title3");
+            const title4 = document.getElementById("title4");
+
+            const item1 = document.getElementById("item-1");
+            const item2 = document.getElementById("item-2");
+            const item3 = document.getElementById("item-3");
+            const item4 = document.getElementById("item-4");
+
+            op1.addEventListener("click", () => {
+                inf1.classList.remove("none");
+                title1.classList.add("flex");
+                item1.classList.remove("none");
+                op1.classList.add("img");
+
+                inf2.classList.add("none");
+                title2.classList.remove("flex");
+                item2.classList.add("none");
+                op2.classList.remove("img");
+
+                inf3.classList.add("none");
+                title3.classList.remove("flex");
+                item3.classList.add("none");
+                op3.classList.remove("img");
+
+                inf4.classList.add("none");
+                title4.classList.remove("flex");
+                item4.classList.add("none");
+                op4.classList.remove("img");
+            })
+
+            op2.addEventListener("click", () => {
+                inf1.classList.add("none");
+                title1.classList.remove("flex");
+                item1.classList.add("none");
+                op1.classList.remove("img");
+
+                inf2.classList.remove("none");
+                title2.classList.add("flex");
+                item2.classList.remove("none");
+                op2.classList.add("img");
+
+                inf3.classList.add("none");
+                title3.classList.remove("flex");
+                item3.classList.add("none");
+                op3.classList.remove("img");
+
+                inf4.classList.add("none");
+                title4.classList.remove("flex");
+                item4.classList.add("none");
+                op4.classList.remove("img");
+            });
+
+            op3.addEventListener("click", (e) => {
+                inf1.classList.add("none");
+                title1.classList.remove("flex");
+                item1.classList.add("none");
+                op1.classList.remove("img");
+
+                inf2.classList.add("none");
+                title2.classList.remove("flex");
+                item2.classList.add("none");
+                op2.classList.remove("img");
+
+                inf3.classList.remove("none");
+                title3.classList.add("flex");
+                item3.classList.remove("none");
+                op3.classList.add("img");
+
+                inf4.classList.add("none");
+                title4.classList.remove("flex");
+                item4.classList.add("none");
+                op4.classList.remove("img");
+            });
+
+            op4.addEventListener("click", (e) => {
+                inf1.classList.add("none");
+                title1.classList.remove("flex");
+                item1.classList.add("none");
+                op1.classList.remove("img");
+
+                inf2.classList.add("none");
+                title2.classList.remove("flex");
+                item2.classList.add("none");
+                op2.classList.remove("img");
+
+                inf3.classList.add("none");
+                title3.classList.remove("flex");
+                item3.classList.add("none");
+                op3.classList.remove("img");
+
+                inf4.classList.remove("none");
+                title4.classList.add("flex");
+                item4.classList.remove("none");
+                op4.classList.add("img");
+            })
+        </script>

@@ -1,0 +1,237 @@
+<style>
+    .left {
+        width: 33%;
+        font-size: 20px;
+    }
+
+    .fa-magnifying-glass {
+        rotate: 90deg;
+        font-size: 18px;
+    }
+
+    .center {
+        width: 33%;
+    }
+
+    .right {
+        width: 33%;
+        font-size: 18px;
+    }
+
+    .header {
+        width: 100%;
+        z-index: 1;
+        position: sticky;
+        top: 0px;
+    }
+
+    .log{
+        border: 1px solid black;
+        border-radius: 8px;
+        color: white;
+        background-color: black;
+    }
+    .user {
+        height: 25px;
+        width: 25px;
+        font-size: 14px;
+        border: 1px solid black;
+        border-radius: 50px;
+    }
+    .header ul{
+        width: 40%;
+    }
+    .logo{
+        width: 20%;
+    }
+    .user-tol{
+        width: 30%;
+    }
+    .cart,.thre,.wish{
+        font-size: 17px;
+    }
+    .na{
+        width: 100%;
+        box-shadow: 1px 1px 15px lightgray;
+        position: absolute;
+    }
+    .na li{
+        border-bottom: 1px solid black;
+    }
+    .pro{
+        box-shadow: 1px 1px 10px lightgray;
+        border-radius: 6px;
+    }
+    .pro1{
+        box-shadow: 1px 1px 10px lightgray;
+        border-radius: 6px;
+    }
+    .pro1 li:hover{
+        color: white;
+        background-color: #0067b8;
+    }
+    .cro{
+        font-size: 20px;
+    }
+</style>
+<div class="header lg:hidden h-12 bg-white justify-start items-center flex">
+    <div class="left flex">
+        <div class="bar mx-3 flex justify-center items-center"><i class="fa-solid fa-bars"></i></div>
+        <div class="cross mx-3 flex justify-center items-center hidden"><i class="fa-solid fa-xmark"></i></div>
+        <div class="search mx-2 flex justify-center items-center"><i class="fa-solid fa-magnifying-glass"></i></div>
+    </div>
+    <div class="center flex justify-center text-black font-semibold">
+        <h1>Sole</h1>
+        <img src="/Tools/logo.png" class="h-8 w-8" alt="">
+        <h1>Surge</h1>
+    </div>
+    <div class="right flex justify-end items-center">
+        <i class="fa-solid mx-2 fa-cart-shopping"></i>
+        <div class="user mx-3 flex justify-center items-center">
+            <i class="fa-solid fa-user"></i>
+        </div>
+        <div class="cro mx-4 justify-center items-center hidden">
+        <i class="fa-solid fa-xmark"></i>
+        </div>
+    </div>
+
+</div>
+
+<div class="header bg-white hidden lg:flex h-16 items-center">
+    <div class="logo cursor-pointer mx-3 flex text-xl font-semibold">
+        <h1>Sole</h1>
+        <img src="/Tools/logo.png" class="h-9 w-9" alt="">
+        <h1>Surge</h1>
+    </div>
+    <ul class="flex justify-between">
+        <li class="cursor-pointer" ><i class="fa-solid mx-1 fa-house"></i>Home</li>
+        <li class="cursor-pointer" ><i class="fa-solid mx-1 fa-magnifying-glass"></i>Search</li>
+        <li class="cursor-pointer" ><i class="fa-solid mx-1 fa-store"></i>Stores</li>
+        <li class="cursor-pointer" ><i class="fa-solid mx-1 fa-dollar-sign"></i>Become a Seller</li>
+        <li class="cursor-pointer" ><i class="fa-solid mx-1 fa-headphones"></i>Help</li>
+    </ul>
+    <div class="user-tol mx-5 p-3 flex justify-between">
+        <div class="log flex justify-between cursor-pointer w-24 p-1 h-10 items-center">
+            <i class="fa-solid fa-user"></i>
+            <h1 class="font-semibold">Login</h1>
+            <i class="fa-solid fa-angle-down"></i>
+        </div>
+        <div class="cart cursor-pointer font-semibold flex justify-center items-center">
+            <i class="fa-solid mx-2 fa-cart-shopping"></i>
+            <h1>Cart</h1>
+        </div>
+        <div class="wish cursor-pointer font-semibold flex justify-center items-center">
+            <i class="fa-regular mx-2 fa-heart"></i>
+            <h1>Wishlist</h1>
+        </div>
+        <div class="thre cursor-pointer flex justify-center items-center">
+        <i class="fa-solid fa-ellipsis-vertical"></i>
+        </div>
+    </div>
+</div>
+
+<ul class="na hidden bg-white flex-col">
+    <li class="h-12 flex items-center"><i class="fa-solid mx-2 fa-house"></i>Home</li>
+    <li class="h-12 flex items-center"><i class="fa-solid mx-2 fa-store"></i>Store</li>
+    <li class="h-12 flex items-center"><i class="fa-solid mx-2 fa-dollar-sign"></i>Become a Seller</li>
+    <li class="h-12 flex items-center"><i class="fa-solid mx-2 fa-headphones"></i>Help</li>
+</ul>
+
+<ul class="pro right-0 absolute bg-white w-36 hidden flex-col">
+    <li class="h-10 items-center click flex"><i class="fa-regular mx-2 fa-user"></i>Proflie</li>
+    <li class="h-10 items-center click flex"><i class="fa-solid mx-2 fa-right-from-bracket"></i>Log Out</li>
+</ul>
+
+<ul class="pro1 right-60 bg-white mt-1 top-12 cursor-pointer absolute w-36 hidden flex-col">
+    <li class="h-10 items-center click flex"><i class="fa-regular mx-2 fa-user"></i>Proflie</li>
+    <li class="h-10 items-center click flex"><i class="fa-solid mx-2 fa-right-from-bracket"></i>Log Out</li>
+</ul>
+
+<script>
+    const bar = document.querySelector(".bar");
+    const bar1 = document.querySelectorAll(".bar");
+    const cross = document.querySelector(".cross");
+    const cross1 = document.querySelectorAll(".cross");
+    const nav = document.querySelectorAll(".na");
+
+    bar.addEventListener("click",(e)=>{
+        for (const i of bar1) {
+            i.style.display = "none";
+        }
+        for (const j of cross1) {
+            j.style.display = "flex";
+        }
+        for (const k of nav) {
+            k.style.display = "flex";
+            k.style.position = "absolute"
+        }
+    });
+    cross.addEventListener("click",(e)=>{
+        for (const i of cross1) {
+            i.style.display = "none";
+        }
+        for (const j of bar1) {
+            j.style.display = "flex";
+        }
+        for (const k of nav) {
+            k.style.display = "none";
+        }
+    })
+</script>
+<script>
+    const user = document.querySelector(".user");
+    const user1 = document.querySelectorAll(".user");
+    const cross2 = document.querySelector(".cro")
+    const cross3 = document.querySelectorAll(".cro")
+    const profile = document.querySelectorAll(".pro");
+
+    user.addEventListener("click",(e)=>{
+        for (const i of profile) {
+            i.style.display = "flex";
+        }
+        for (const j of user1) {
+            j.style.display = "none";
+        }
+        for (const k of cross3) {
+            k.style.display = "flex";
+        }
+    })
+    cross2.addEventListener("click",(e)=>{
+        for (const i of profile) {
+            i.style.display = "none";
+        }
+        for (const j of user1) {
+            j.style.display = "flex";
+        }
+        for (const k of cross3) {
+            k.style.display = "none";
+        }
+    })
+</script>
+
+<script>
+    /*const login = document.querySelector(".log");
+    const pro1 = document.querySelectorAll(".pro1");
+    const pro2 = document.querySelector(".pro1");
+
+    login.addEventListener("mouseover",(e)=>{
+        for (const i of pro1) {
+            i.style.display = "flex";
+        }
+    });
+    pro2.addEventListener("mouseover",(e)=>{
+        for (const i of pro1) {
+            i.style.display = "flex";
+        }
+    });
+    pro2.addEventListener("mouseout",(e)=>{
+        for (const i of pro1) {
+            i.style.display = "none";
+        }
+    });
+    login.addEventListener("mouseout",(e)=>{
+        for (const i of pro1) {
+            i.style.display = "none";
+        }
+    });*/
+</script>
